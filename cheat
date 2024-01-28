@@ -1,0 +1,22 @@
+def cheat(exercise):
+    """Returns a correct solution to 'exercise' for the following Python 
+    exercises in Week 1: Q1.2P.7, Q1.2P.8"""
+    
+    if exercise == "Q1.2P.7":
+        print("# 3 dimensional array of 4 by 3 by 5\n"
+      "my_array = np.ones((4, 3, 5))*np.nan\n"
+      "print(my_array)")
+        
+    elif exercise == "Q1.2P.8":
+        print("# I imported the file and specified the separator as ';'\n"
+      "euro_numbers_df = pd.read_csv('EuroNumbers_data.csv', sep=';')\n"
+      "# I used the method .to_dict() to convert the data frame into a\n"
+      "# dictionary.\n"
+      "euro_numbers_dict = euro_numbers_df.to_dict()\n"
+      "# I used .keys() method to return the keys of the dictionary\n"
+      "keys = euro_numbers_dict.keys()\n"
+      "print(keys)\n"
+      "# dict_keys(['Subject', 'RT', 'response', 'accuracy'])")
+        
+    else:
+        return("Choose either Q1.2P.7 or Q1.2P.8")
